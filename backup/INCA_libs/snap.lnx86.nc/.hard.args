@@ -1,0 +1,9 @@
+addrdec.v
+busarb.v
+dmactr.v
+slaves.v
+sram.v
+test.v
+timer.v
+top.v
+-ACCESS +r

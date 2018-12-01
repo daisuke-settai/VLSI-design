@@ -1,0 +1,52 @@
+ncverilog: 06.20-s004: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+TOOL:	ncverilog	06.20-s004: Started on May 02, 2018 at 12:29:29 JST
+ncverilog
+	+access+r
+	alu.v
+	alu_test.v
+Recompiling... reason: file './alu_test.v' is newer than expected.
+	expected: Wed May  2 12:24:15 2018
+	actual:   Wed May  2 12:27:09 2018
+file: alu.v
+file: alu_test.v
+	module worklib.test:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.test:v <0x43b5b61b>
+			streams:   7, words:  3496
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           5       5
+		Vectored wires:      4       -
+		Always blocks:       1       1
+		Initial blocks:      1       1
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+ncsim> source /usr/local/vdec/cadence/IUS06.20.004/tools/inca/files/ncsimrc
+ncsim> run
+a=       200 b=       300 cont=0 result=         8
+a=       200 b=       300 cont=1 result=       492
+a=       200 b=       300 cont=2 result=       500
+a=       200 b=       300 cont=3 result=         0
+a=       200 b=       300 cont=4 result=       192
+a=       200 b=       300 cont=5 result=4294967003
+a=       200 b=       300 cont=6 result=4294967196
+a=       200 b=       300 cont=7 result=         1
+a=       100 b=        50 cont=0 result=        32
+a=       100 b=        50 cont=1 result=       118
+a=       100 b=        50 cont=2 result=       150
+a=       100 b=        50 cont=3 result=         0
+a=       100 b=        50 cont=4 result=        68
+a=       100 b=        50 cont=5 result=4294967277
+a=       100 b=        50 cont=6 result=        50
+a=       100 b=        50 cont=7 result=         0
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	ncverilog	06.20-s004: Exiting on May 02, 2018 at 12:29:31 JST  (total: 00:00:02)

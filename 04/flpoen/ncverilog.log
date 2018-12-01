@@ -1,0 +1,37 @@
+ncverilog: 06.20-s004: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+TOOL:	ncverilog	06.20-s004: Started on May 02, 2018 at 11:16:44 JST
+ncverilog
+	+access+r
+	flopen.v
+Recompiling... reason: file './flopen.v' is newer than expected.
+	expected: Wed May  2 11:11:14 2018
+	actual:   Wed May  2 11:14:18 2018
+file: flopen.v
+	module worklib.test:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.flopen:v <0x0725add7>
+			streams:   2, words:   354
+		worklib.test:v <0x408deb1f>
+			streams:   3, words:  1732
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		         Instances  Unique
+		Modules:         2       2
+		Registers:       4       4
+		Scalar wires:    2       -
+		Vectored wires:  2       -
+		Always blocks:   2       2
+		Initial blocks:  1       1
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+ncsim> source /usr/local/vdec/cadence/IUS06.20.004/tools/inca/files/ncsimrc
+ncsim> run
+Simulation complete via $finish(1) at time 50 NS + 0
+./flopen.v:38 		$finish;
+ncsim> exit
+TOOL:	ncverilog	06.20-s004: Exiting on May 02, 2018 at 11:16:45 JST  (total: 00:00:01)

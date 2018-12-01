@@ -1,0 +1,10 @@
+
+module inv_reg ( a, clk, y );
+  input a, clk;
+  output y;
+  wire   n2;
+
+  DFF_X1 y_reg ( .D(n2), .CK(clk), .Q(y) );
+  INV_X1 U4 ( .A(a), .ZN(n2) );
+endmodule
+

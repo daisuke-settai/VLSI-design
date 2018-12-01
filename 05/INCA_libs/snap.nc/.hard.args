@@ -1,0 +1,3 @@
+mipstest.v
+mips.v
+-ACCESS +r

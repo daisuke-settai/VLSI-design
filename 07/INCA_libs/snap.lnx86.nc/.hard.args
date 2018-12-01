@@ -1,0 +1,6 @@
+test.v
+top.v
+addrdec.v
+sram.v
+timer.v
+-ACCESS +r

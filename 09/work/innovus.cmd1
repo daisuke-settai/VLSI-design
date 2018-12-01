@@ -1,0 +1,140 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Fri Jun 15 11:29:20 2018                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v16.21-s078_1 (64bit) 01/20/2017 14:00 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 16.21-s078_1 NR170119-1828/16_21-UB (database version 2.30, 368.6.1) {superthreading v1.37}
+#@(#)CDS: AAE 16.21-e024 (64bit) 01/20/2017 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 16.21-s038_1 () Jan 19 2017 09:01:24 ( )
+#@(#)CDS: SYNTECH 16.21-s013_1 () Jan 14 2017 08:40:50 ( )
+#@(#)CDS: CPE v16.21-s075
+#@(#)CDS: IQRC/TQRC 15.2.7-s638 (64bit) Wed Jan  4 19:58:15 PST 2017 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getDrawView
+loadWorkspace -name Physical
+win
+set init_gnd_net VSS
+set init_lef_file ~matutani/lib/cells.lef
+set init_verilog mips.vnet
+set init_mmmc_file Default.view
+set init_pwr_net VDD
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -d 150 150 15 15 15 15
+uiSetTool select
+getIoFlowFlag
+fit
+saveDesign floor.enc
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal10 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top metal10 bottom metal10 left metal9 right metal9} -width {top 4 bottom 4 left 4 right 4} -spacing {top 2 bottom 2 left 2 right 2} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer metal10 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe -nets {VDD VSS} -layer metal8 -direction vertical -width 4 -spacing 2 -set_to_set_distance 50 -start_from left -start_offset 35 -stop_offset 0 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal10 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal10 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1(1) metal10(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal10(10) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal10(10) }
+selectWire 50.0100 8.4900 54.0100 140.9600 8 VDD
+gui_select -rect {224.118 -172.049 171.671 -45.559}
+gui_select -rect {116.139 54.706 116.139 -25.506}
+saveDesign power.enc
+setPlaceMode -fp false
+placeDesign
+setDrawView ameba
+setDrawView ameba
+setDrawView place
+setDrawView ameba
+setDrawView place
+gui_select -rect {72.145 94.389 73.526 93.633}
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+editPin -pin clk -layer metal3 -spreadType CENTER -side TOP -use CLOCK
+set_ccopt_property buffer_cells {CLKBUF_X1 CLKBUF_X2 CLKBUF_X3}
+ccopt_design
+getCTSMode -engine -quiet
+ctd_win -id ctd_window
+selectInst {dp/res/q_reg[3]}
+zoomSelected
+deselectInst {dp/res/q_reg[3]}
+selectInst {dp/ir1/q_reg[4]}
+zoomSelected
+deselectInst {dp/ir1/q_reg[4]}
+selectInst {dp/pcreg/q_reg[2]}
+zoomSelected
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postCTS
+optDesign -postCTS -hold
+setNanoRouteMode -quiet -timingEngine {}
+setNanoRouteMode -quiet -routeWithTimingDriven 1
+setNanoRouteMode -quiet -routeWithSiPostRouteFix 0
+setNanoRouteMode -quiet -drouteStartIteration default
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+setDelayCalMode -engine aae -SIAware true
+setAnalysisMode -analysisType onChipVariation -cppr both
+deselectAll
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postRoute
+optDesign -postRoute -hold
+getFillerMode -quiet
+addFiller -cell FILLCELL_X8 FILLCELL_X4 FILLCELL_X32 FILLCELL_X2 FILLCELL_X16 FILLCELL_X1 -prefix FILLER
+saveDesign final.enc
+saveDesign final.enc
+verifyConnectivity -type all -error 1000 -warning 50
+setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000
+verifyGeometry
+setVerifyGeometryMode -area { 0 0 0 0 }
+rcOut -spef mips.spef
+all_hold_analysis_views 
+all_setup_analysis_views 
+write_sdf  -ideal_clock_network mips.sdf
+saveNetlist mips.final.vnet
+gui_select -rect {153.857 -55.654 166.294 -62.104}
+panPage -1 0
+panPage -1 0
+panPage -1 0
+fit
+gui_select -rect {991.189 -1767.159 -5846.092 3008.120}

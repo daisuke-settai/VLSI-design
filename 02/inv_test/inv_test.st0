@@ -1,0 +1,16 @@
+***** HSPICE -- C-2009.03 64-BIT (Feb 24 2009) linux ******
+ Input File: inv_test.sp
+ lic: No 'setenv LM_LICENSE_FILE' in current environment'
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   j151080D             HOSTNAME: cad0
+ lic: HOSTID: 40a8f05ecf03         PID:      16497
+ lic: Using FLEXlm license file:
+ lic: 1700@vdec-cad1
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-mar-2019/2017.12
+ lic: FLOATING license(s) on SERVER
+ lic:
+ **error** stop simulation by signal SIGINT = 2
+
+ lic: Release hspice token(s)

@@ -1,0 +1,78 @@
+top: input
+	addr0, idata0, breq0_, dsaddr, ddaddr, dmode, dreq_, reset_, clk
+     output
+	odata0, bgrt0_, eop_
+	*connect slaves, busarb, dmactroller 
+busarb: input 
+	breq0_, breq1_, reset_, clk
+	output
+	bgrt0_, bgrt1_
+	*manage to access to bus
+dmac: input
+	idata, bgrt_, dsaddr, ddaddr, dmode, dreq_, reset_, clk
+	output
+	addr, odata, rw_, breq_, eop_
+	*manage data forwarding
+slaves: input
+	addr, idata, rw_, reset_, clk
+	output
+	odata
+	*contain sram1, sram2, timer
+
+
+[j151080D@cad2:08]% ncverilog +access+r *.v
+ncverilog: 06.20-s004: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+file: addrdec.v
+file: busarb.v
+file: dmac.v
+file: slaves.v
+file: sram.v
+file: test.v
+	module worklib.test:v
+		errors: 0, warnings: 0
+file: timer.v
+file: top.v
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.addrdec:v <0x65654255>
+			streams:   1, words:   449
+		worklib.busarb:v <0x5093f970>
+			streams:   3, words:  1025
+		worklib.dmactr:v <0x1664e08e>
+			streams:  19, words:  9787
+		worklib.slaves:v <0x25c5db8d>
+			streams:   2, words:   668
+		worklib.sram:v <0x3e4d5f0b>
+			streams:   2, words:   498
+		worklib.test:v <0x0dead884>
+			streams:  12, words:  4739
+		worklib.timer:v <0x556b8fae>
+			streams:   6, words:  1968
+		worklib.top:v <0x3bcf5cc3>
+			streams:   4, words:   927
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  9       8
+		Registers:               24      23
+		Scalar wires:            18       -
+		Vectored wires:          18       -
+		Always blocks:            7       6
+		Initial blocks:           1       1
+		Cont. assignments:       11      17
+		Pseudo assignments:       1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+ncsim> source /usr/local/vdec/cadence/IUS06.20.004/tools/inca/files/ncsimrc
+ncsim> run
+[processor] odata0=99
+[DMA single mode]
+[DMA] odata0=99
+Simulation complete via $finish(1) at time 67 NS + 0
+./test.v:52 		$finish;
+ncsim> exit
+

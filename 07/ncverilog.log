@@ -1,0 +1,69 @@
+ncverilog: 06.20-s004: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+TOOL:	ncverilog	06.20-s004: Started on May 25, 2018 at 12:49:21 JST
+ncverilog
+	+access+r
+	test.v
+	top.v
+	addrdec.v
+	sram.v
+	timer.v
+Recompiling... reason: file './test.v' is newer than expected.
+	expected: Fri May 25 12:45:21 2018
+	actual:   Fri May 25 12:46:30 2018
+file: test.v
+	module worklib.test:v
+		errors: 0, warnings: 0
+file: top.v
+file: addrdec.v
+file: sram.v
+file: timer.v
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.test:v <0x0dc4b250>
+			streams:   7, words: 19389
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  6       5
+		Registers:                9       8
+		Scalar wires:            11       -
+		Vectored wires:           9       -
+		Always blocks:            5       4
+		Initial blocks:           1       1
+		Cont. assignments:        6      10
+		Pseudo assignments:       2       2
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+ncsim> source /usr/local/vdec/cadence/IUS06.20.004/tools/inca/files/ncsimrc
+ncsim> run
+timer <clear>
+timer <start>
+mem1
+addr=120 odata=99 cs0_=1 cs1_=0 cs2_=1
+mem2
+addr=020 odata=99 cs0_=0 cs1_=1 cs2_=1
+timer <stop>
+addr=200 odata=05 cs0_=1 cs1_=1 cs2_=0
+addr=201 odata=00 cs0_=1 cs1_=1 cs2_=0
+addr=202 odata=00 cs0_=1 cs1_=1 cs2_=0
+addr=203 odata=00 cs0_=1 cs1_=1 cs2_=0
+timer <clear>
+addr=200 odata=00 cs0_=1 cs1_=1 cs2_=0
+addr=201 odata=00 cs0_=1 cs1_=1 cs2_=0
+addr=202 odata=00 cs0_=1 cs1_=1 cs2_=0
+addr=203 odata=00 cs0_=1 cs1_=1 cs2_=0
+timer <start>
+#1000
+timer <stop>
+addr=200 odata=f4 cs0_=1 cs1_=1 cs2_=0
+addr=201 odata=01 cs0_=1 cs1_=1 cs2_=0
+addr=202 odata=00 cs0_=1 cs1_=1 cs2_=0
+addr=203 odata=00 cs0_=1 cs1_=1 cs2_=0
+Simulation complete via $finish(1) at time 1041 NS + 0
+./test.v:116 		$finish;
+ncsim> exit
+TOOL:	ncverilog	06.20-s004: Exiting on May 25, 2018 at 12:49:22 JST  (total: 00:00:01)

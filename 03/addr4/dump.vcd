@@ -1,0 +1,67 @@
+$date
+    Apr 27, 2018  20:35:01
+$end
+$version
+    TOOL:	ncsim	06.20-s004
+$end
+$timescale
+    10 ps
+$end
+
+$scope module test $end
+
+$scope module u1 $end
+$var wire      4 !    a [3:0] $end
+$var wire      4 "    b [3:0] $end
+$var wire      1 #    clk  $end
+$var wire      4 $    y [3:0] $end
+$var reg       4 %    x [3:0] $end
+$upscope $end
+
+
+$scope module u0 $end
+$var wire      4 !    a [3:0] $end
+$var wire      4 "    b [3:0] $end
+$var wire      4 &    y [3:0] $end
+$var wire      4 '    x [3:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+bx !
+bx "
+1#
+bx $
+bx %
+bx &
+bx '
+$end
+#100
+b10 "
+b11 !
+0#
+b101 '
+b101 &
+#200
+1#
+b101 %
+b101 $
+#300
+0#
+#400
+1#
+#500
+0#
+#600
+1#
+#700
+0#
+#800
+1#
+#900
+0#
+#1000
+1#
+#1100

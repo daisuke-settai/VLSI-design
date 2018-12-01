@@ -1,0 +1,13 @@
+; Virtuoso/Calibre interface
+load(strcat(getShellEnvVar("MGC_HOME")
+"/shared/pkgs/icv.ixl/tools/queryskl/calibre.skl"))
+mgc_rve_init_socket(9189)
+
+; Bind Keys
+loadi("./setup/common_bindkeys.il")
+
+; Load display.drf
+envSetVal( "graphic" "drfPath" 'string "./setup/display.drf")
+
+; Load default .cdsenv file
+(envLoadVals ?envFile "./setup/cdsenv" ?tool "layout")

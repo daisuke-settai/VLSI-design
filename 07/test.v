@@ -1,0 +1,118 @@
+`timescale 1ns/10ps
+`include "define.h"
+module test();
+	reg [`BUS_ADDR_WIDTH-1:0] addr;
+	reg [`DATA_WIDTH-1:0] idata;
+        wire [`DATA_WIDTH-1:0] odata;
+	reg rw_, reset_, clk;
+	top u0 (addr, idata, odata, rw_, reset_, clk);
+	always begin
+		clk <= 1; #1; clk <= 0; #1;
+	end
+	initial begin
+		#1;
+		$dumpfile("dump.vcd");
+		$dumpvars(0, test.u0);
+		$display("timer <clear>");
+                rw_ <= `Write;
+                addr <= 10'h204;
+                idata <= 1;
+                #2;
+                $display("timer <start>");
+                rw_ <= `Write;
+                addr <= 10'h204;
+                idata <= 2;
+                #2;
+		rw_ <= `Write;
+		addr <= 10'h120; 
+		idata <= 8'h99; 
+		#2;
+		rw_ <= `Read;
+                addr <= 10'h120; 
+                idata <= 0; 
+		#2;
+		$display("mem1");
+		$display("addr=%h odata=%h cs0_=%b cs1_=%b cs2_=%b", addr, odata, u0.u0.cs0_, u0.u0.cs1_, u0.u0.cs2_);
+	        rw_ <= `Write;
+                addr <= 10'h20; 
+                idata <= 8'h99; 
+                #2;
+                rw_ <= `Read;
+                addr <= 10'h20; 
+                idata <= 0; 
+                #2;
+		$display("mem2");
+                $display("addr=%h odata=%h cs0_=%b cs1_=%b cs2_=%b", addr, odata, u0.u0.cs0_, u0.u0.cs1_, u0.u0.cs2_);
+		$display("timer <stop>");
+		rw_ <= `Write;
+		addr <= 10'h204;
+		idata <= 4;
+		#2;
+		rw_ <= `Read;
+		addr <= 10'h200;
+		#2;
+		$display("addr=%h odata=%h cs0_=%b cs1_=%b cs2_=%b", addr, odata, u0.u0.cs0_, u0.u0.cs1_, u0.u0.cs2_);
+                rw_ <= `Read;
+                addr <= 10'h201;
+                #2;
+                $display("addr=%h odata=%h cs0_=%b cs1_=%b cs2_=%b", addr, odata, u0.u0.cs0_, u0.u0.cs1_, u0.u0.cs2_);
+                rw_ <= `Read;
+                addr <= 10'h202;
+                #2;
+                $display("addr=%h odata=%h cs0_=%b cs1_=%b cs2_=%b", addr, odata, u0.u0.cs0_, u0.u0.cs1_, u0.u0.cs2_);
+                rw_ <= `Read;
+                addr <= 10'h203;
+                #2;
+                $display("addr=%h odata=%h cs0_=%b cs1_=%b cs2_=%b", addr, odata, u0.u0.cs0_, u0.u0.cs1_, u0.u0.cs2_);
+				
+		$display("timer <clear>");
+                rw_ <= `Write;
+                addr <= 10'h204;
+                idata <= 1;
+                #2;
+                rw_ <= `Read;
+                addr <= 10'h200;
+                #2;
+                $display("addr=%h odata=%h cs0_=%b cs1_=%b cs2_=%b", addr, odata, u0.u0.cs0_, u0.u0.cs1_, u0.u0.cs2_);
+                rw_ <= `Read;
+                addr <= 10'h201;
+                #2;
+                $display("addr=%h odata=%h cs0_=%b cs1_=%b cs2_=%b", addr, odata, u0.u0.cs0_, u0.u0.cs1_, u0.u0.cs2_);
+                rw_ <= `Read;
+                addr <= 10'h202;
+                #2;
+                $display("addr=%h odata=%h cs0_=%b cs1_=%b cs2_=%b", addr, odata, u0.u0.cs0_, u0.u0.cs1_, u0.u0.cs2_);
+                rw_ <= `Read;
+                addr <= 10'h203;
+                #2;
+                $display("addr=%h odata=%h cs0_=%b cs1_=%b cs2_=%b", addr, odata, u0.u0.cs0_, u0.u0.cs1_, u0.u0.cs2_);
+
+		$display("timer <start>");
+                rw_ <= `Write;
+                addr <= 10'h204;
+                idata <= 2;
+                #1000
+		$display("#1000");
+		$display("timer <stop>");
+                rw_ <= `Write;
+                addr <= 10'h204;
+                idata <= 4;
+                rw_ <= `Read;
+                addr <= 10'h200;
+                #2;
+                $display("addr=%h odata=%h cs0_=%b cs1_=%b cs2_=%b", addr, odata, u0.u0.cs0_, u0.u0.cs1_, u0.u0.cs2_);
+                rw_ <= `Read;
+                addr <= 10'h201;
+                #2;
+                $display("addr=%h odata=%h cs0_=%b cs1_=%b cs2_=%b", addr, odata, u0.u0.cs0_, u0.u0.cs1_, u0.u0.cs2_);
+                rw_ <= `Read;
+                addr <= 10'h202;
+                #2;
+                $display("addr=%h odata=%h cs0_=%b cs1_=%b cs2_=%b", addr, odata, u0.u0.cs0_, u0.u0.cs1_, u0.u0.cs2_);
+                rw_ <= `Read;
+                addr <= 10'h203;
+                #2;
+                $display("addr=%h odata=%h cs0_=%b cs1_=%b cs2_=%b", addr, odata, u0.u0.cs0_, u0.u0.cs1_, u0.u0.cs2_);
+		$finish;
+	end
+endmodule

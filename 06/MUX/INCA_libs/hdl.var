@@ -1,0 +1,3 @@
+define VIEW_MAP ( $VIEW_MAP, .v => v)
+define LIB_MAP ( $LIB_MAP, ../../../../../../../staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Verilog/NangateOpenCellLibrary.v => NangateOpenCellLibrary )
+define VIEW_MAP ( $VIEW_MAP, .vnet => vnet)

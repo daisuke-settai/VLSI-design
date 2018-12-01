@@ -1,0 +1,37 @@
+ncverilog: 06.20-s004: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+Recompiling... reason: file './test.v' is newer than expected.
+	expected: Fri Jun 22 12:23:03 2018
+	actual:   Fri Jun 22 12:26:13 2018
+file: test.v
+	module worklib.top:v
+		errors: 0, warnings: 0
+file: mips.v
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.top:v <0x274f71e7>
+			streams:   6, words:  2452
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 24      14
+		Registers:               33      26
+		Scalar wires:            12       -
+		Expanded wires:          36       5
+		Vectored wires:          28       -
+		Always blocks:           21      14
+		Initial blocks:           2       2
+		Cont. assignments:       15      12
+		Pseudo assignments:       3       3
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+ncsim> source /usr/local/vdec/cadence/IUS06.20.004/tools/inca/files/ncsimrc
+ncsim> run
+Data [210] is stored in Address [255]
+Simulation completely successful
+Simulation complete via $finish(1) at time 21880 NS + 1
+./test.v:59             $finish;
+ncsim> exit

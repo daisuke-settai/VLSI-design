@@ -1,0 +1,12 @@
+
+module mux4 ( d0, d1, d2, d3, sel, od );
+  input [1:0] sel;
+  input d0, d1, d2, d3;
+  output od;
+  wire   n6, n7;
+
+  MUX2_X1 U6 ( .A(n6), .B(n7), .S(sel[1]), .Z(od) );
+  MUX2_X1 U7 ( .A(d2), .B(d3), .S(sel[0]), .Z(n7) );
+  MUX2_X1 U8 ( .A(d0), .B(d1), .S(sel[0]), .Z(n6) );
+endmodule
+

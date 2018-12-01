@@ -1,0 +1,38 @@
+***** HSPICE -- C-2009.03 64-BIT (Feb 24 2009) linux ******
+ Input File: nand2_test.sp
+ lic: No 'setenv LM_LICENSE_FILE' in current environment'
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   j151080D             HOSTNAME: cad0
+ lic: HOSTID: 40a8f05ecf03         PID:      16666
+ lic: Using FLEXlm license file:
+ lic: 1700@vdec-cad1
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-mar-2019/2017.12
+ lic: FLOATING license(s) on SERVER
+ lic:
+ init: begin read circuit files,  cpu clock=  0.00E+00
+       option post
+ init: end read circuit files,  cpu clock=  0.00E+00 memory=       151 kb
+ init: begin check errors,  cpu clock=  0.00E+00
+ init: end check errors,  cpu clock=  1.00E-02 memory=       158 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  1.00E-02
+       establish matrix -- done,  cpu clock=  1.00E-02 memory=       173 kb
+       re-order matrix -- done,  cpu clock=  1.00E-02 memory=       175 kb
+ init: end setup matrix,  cpu clock=  1.00E-02 memory=       182 kb
+ dcop: begin dcop,  cpu clock=  1.00E-02
+ dcop: end dcop,  cpu clock=  1.00E-02 memory=       185 kb  tot_iter=      10
+ output: nand2_test.tr0
+ sweep: tran tran0    begin, stop_t=  1.20E-08 #sweeps=  13 cpu clock=  1.00E-02
+ tran: time= 1.2325E-09 tot_iter=      39 conv_iter=      15 cpu clock= 1.00E-02
+ tran: time= 2.4712E-09 tot_iter=      76 conv_iter=      28 cpu clock= 1.00E-02
+ tran: time= 4.0000E-09 tot_iter=     139 conv_iter=      51 cpu clock= 1.00E-02
+ tran: time= 4.9144E-09 tot_iter=     186 conv_iter=      67 cpu clock= 1.00E-02
+ tran: time= 6.0000E-09 tot_iter=     191 conv_iter=      69 cpu clock= 1.00E-02
+ tran: time= 7.4697E-09 tot_iter=     252 conv_iter=      91 cpu clock= 1.00E-02
+ tran: time= 8.9672E-09 tot_iter=     254 conv_iter=      92 cpu clock= 1.00E-02
+ tran: time= 1.0465E-08 tot_iter=     256 conv_iter=      93 cpu clock= 1.00E-02
+ tran: time= 1.2000E-08 tot_iter=     258 conv_iter=      94 cpu clock= 1.00E-02
+ sweep: tran tran0    end,  cpu clock=  1.00E-02 memory=       186 kb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

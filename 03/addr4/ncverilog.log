@@ -1,0 +1,41 @@
+ncverilog: 06.20-s004: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+TOOL:	ncverilog	06.20-s004: Started on Apr 27, 2018 at 20:34:59 JST
+ncverilog
+	+access+r
+	add4_test.v
+	add4.v
+	add4reg.v
+Recompiling... reason: file './add4_test.v' is newer than expected.
+	expected: Fri Apr 27 11:29:43 2018
+	actual:   Fri Apr 27 11:31:43 2018
+file: add4_test.v
+	module worklib.test:v
+		errors: 0, warnings: 0
+file: add4.v
+file: add4reg.v
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.test:v <0x1b018c84>
+			streams:   5, words:  1487
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  3       3
+		Registers:                4       4
+		Scalar wires:             1       -
+		Vectored wires:           7       -
+		Always blocks:            2       2
+		Initial blocks:           1       1
+		Cont. assignments:        2       3
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+ncsim> source /usr/local/vdec/cadence/IUS06.20.004/tools/inca/files/ncsimrc
+ncsim> run
+Simulation complete via $finish(1) at time 11 NS + 0
+./add4_test.v:17 		$finish;
+ncsim> exit
+TOOL:	ncverilog	06.20-s004: Exiting on Apr 27, 2018 at 20:35:01 JST  (total: 00:00:02)

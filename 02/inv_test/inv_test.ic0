@@ -1,0 +1,41 @@
+* "simulator" "HSPICE" 
+* "version" "C-2009.03 64-BIT"
+* "format" "HSP"
+* "rundate" "22:35:32 04/20/2018 "
+* "netlist" "inv_test.sp "
+* "runtitle" " *inv test"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ vdd =   1.1000        
++ vss =   0.            
++ zn =   1.1000        
++ x0.n_a_m0_g = 775.0371n       
++ x0.n_a_m1_g = 278.3309n       
++ x0.n_vdd_m0_s =   1.1000        
++ x0.n_vss_m1_s =  84.7822n       
++ x0.n_zn_m0_d =   1.1000        
++ x0.n_zn_m1_d =   1.1000        
++ x0.x_pm_inv_x1%vdd_18 =   1.1000        
++ x0.x_pm_inv_x1%vdd_12 =   1.1000        
++ x0.x_pm_inv_x1%vdd_11 =   1.1000        
++ x0.x_pm_inv_x1%vdd_8 =   1.1000        
++ x0.x_pm_inv_x1%vdd_28 =   1.1000        
++ x0.x_pm_inv_x1%vdd_31 =   1.1000        
++ x0.x_pm_inv_x1%vss_18 =   5.6318n       
++ x0.x_pm_inv_x1%vss_17 =   0.            
++ x0.x_pm_inv_x1%vss_10 =   0.            
++ x0.x_pm_inv_x1%vss_9 =   0.            
++ x0.x_pm_inv_x1%vss_8 =   0.            
++ x0.x_pm_inv_x1%vss_29 =   8.0032n       
++ x0.x_pm_inv_x1%vdd_19 =   1.1000        
++ x0.x_pm_inv_x1%a_1 = 263.7269n       
++ x0.x_pm_inv_x1%a_11 = 227.6916n       
++ x0.x_pm_inv_x1%a_18 = 263.0180n       
++ x0.x_pm_inv_x1%a_5 = 279.9722n       
++ x0.x_pm_inv_x1%a_9 =   1.2293n       
+***   END: Saved Operating Point ***                     

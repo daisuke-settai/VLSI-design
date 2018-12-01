@@ -1,0 +1,5 @@
+mux4test.v
+mux4.vnet
+-VFILE
+/home/staff2/matutani/lib/cells.v
+-ACCESS +r

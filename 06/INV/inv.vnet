@@ -1,0 +1,9 @@
+
+module inv ( a, y );
+  input a;
+  output y;
+
+
+  INV_X1 U2 ( .A(a), .ZN(y) );
+endmodule
+

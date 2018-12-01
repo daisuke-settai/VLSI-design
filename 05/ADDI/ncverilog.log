@@ -1,0 +1,74 @@
+ncverilog: 06.20-s004: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+TOOL:	ncverilog	06.20-s004: Started on May 11, 2018 at 20:58:27 JST
+ncverilog
+	+access+r
+	fibtest.v
+	mips.v
+file: fibtest.v
+file: mips.v
+	module worklib.controller:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: ....................
+         $readmemh("fibtest.dat", RAM);
+                                    |
+ncelab: *W,MEMODR (./fibtest.v,74|36): $readmem default memory order incompatible with IEEE1364.
+ Done
+	Generating native compiled code:
+		worklib.alu:v <0x3708a52e>
+			streams:   5, words:  1278
+		worklib.alucontrol:v <0x58331d33>
+			streams:   2, words:  1186
+		worklib.controller:v <0x4d56a155>
+			streams:  19, words: 10080
+		worklib.datapath:v <0x2d55477e>
+			streams:   5, words:   717
+		worklib.exmemory:v <0x5386d46c>
+			streams:   9, words:  3555
+		worklib.flop:v <0x5739dd8a>
+			streams:   2, words:   288
+		worklib.flopen:v <0x0462deb6>
+			streams:   2, words:   426
+		worklib.flopenr:v <0x25472836>
+			streams:   2, words:   482
+		worklib.mips:v <0x4f060afc>
+			streams:   0, words:     0
+		worklib.mux2:v <0x3f2bf2e6>
+			streams:   1, words:   185
+		worklib.mux2:v <0x43dc0c25>
+			streams:   1, words:   302
+		worklib.mux4:v <0x0993abb3>
+			streams:   2, words:   730
+		worklib.mux4:v <0x6c73fbbc>
+			streams:   2, words:   678
+		worklib.regfile:v <0x57b85e03>
+			streams:   4, words:  1405
+		worklib.top:v <0x1a639cd5>
+			streams:   6, words:  2382
+		worklib.zerodetect:v <0x3af70eee>
+			streams:   1, words:   133
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                  24      14
+		Registers:                33      26
+		Scalar wires:             12       -
+		Expanded wires:           36       5
+		Vectored wires:           28       -
+		Always blocks:            21      14
+		Initial blocks:            2       2
+		Cont. assignments:        15      12
+		Pseudo assignments:        3       3
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+ncsim> source /usr/local/vdec/cadence/IUS06.20.004/tools/inca/files/ncsimrc
+ncsim> run
+Data [ 13] is stored in Address [255]
+Simulation completely successful
+Simulation complete via $finish(1) at time 1505 NS + 1
+./fibtest.v:51                $finish;
+ncsim> exit
+TOOL:	ncverilog	06.20-s004: Exiting on May 11, 2018 at 20:58:28 JST  (total: 00:00:01)

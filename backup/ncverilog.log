@@ -1,0 +1,95 @@
+ncverilog: 06.20-s004: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+TOOL:	ncverilog	06.20-s004: Started on Jun 19, 2018 at 15:19:00 JST
+ncverilog
+	+access+r
+	addrdec.v
+	busarb.v
+	dmactr.v
+	slaves.v
+	sram.v
+	test.v
+	timer.v
+	top.v
+file: addrdec.v
+	module worklib.addrdec:v
+		errors: 0, warnings: 0
+file: busarb.v
+	module worklib.busarb:v
+		errors: 0, warnings: 0
+file: dmactr.v
+	module worklib.dmactr:v
+		errors: 0, warnings: 0
+file: slaves.v
+	module worklib.slaves:v
+		errors: 0, warnings: 0
+file: sram.v
+	module worklib.sram:v
+		errors: 0, warnings: 0
+file: test.v
+file: timer.v
+file: top.v
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.addrdec:v <0x65654255>
+			streams:   1, words:   803
+		worklib.busarb:v <0x5093f970>
+			streams:   3, words:  1025
+		worklib.dmactr:v <0x7c7370a2>
+			streams:  14, words:  9460
+		worklib.slaves:v <0x25c5db8d>
+			streams:   2, words:   668
+		worklib.sram:v <0x5667dd42>
+			streams:   3, words:  1160
+		worklib.test:v <0x3f56b1fd>
+			streams:  13, words: 25501
+		worklib.timer:v <0x66afa7b7>
+			streams:   7, words:  2297
+		worklib.top:v <0x7b59edc3>
+			streams:   4, words:   927
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  9       8
+		Registers:               24      23
+		Scalar wires:            18       -
+		Vectored wires:          18       -
+		Always blocks:            8       7
+		Initial blocks:           1       1
+		Cont. assignments:       11      17
+		Pseudo assignments:       2       2
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+ncsim> source /usr/local/vdec/cadence/IUS06.20.004/tools/inca/files/ncsimrc
+ncsim> run
+processor read and write
+addr = 150 odata = 99
+DMA single mode
+addr = 160 odata = 99
+ 
+addr = 151 odata = 98
+addr = 152 odata = 97
+addr = 153 odata = 96
+addr = 170 odata = 02
+addr = 171 odata = 05
+addr = 172 odata = 04
+addr = 173 odata = 02
+DMA burst memory to memory(from 150 to 160)
+addr = 160 odata = 99
+addr = 161 odata = 98
+addr = 162 odata = 97
+addr = 163 odata = 96
+DMA burst memory to IO(from 170 to 204)
+addr = 200 odata = 04
+DMA burst IO to memory(from 200 to 180
+addr = 180 odata = 08
+addr = 181 odata = 0a
+addr = 182 odata = 0c
+addr = 183 odata = 0e
+Simulation complete via $finish(1) at time 169 NS + 0
+./test.v:262       $finish;
+ncsim> exit
+TOOL:	ncverilog	06.20-s004: Exiting on Jun 19, 2018 at 15:19:02 JST  (total: 00:00:02)

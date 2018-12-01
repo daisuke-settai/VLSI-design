@@ -1,0 +1,381 @@
+[06/15 11:22:31      0s] 
+[06/15 11:22:31      0s] Cadence Innovus(TM) Implementation System.
+[06/15 11:22:31      0s] Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/15 11:22:31      0s] 
+[06/15 11:22:31      0s] Version:	v16.21-s078_1, built Fri Jan 20 14:00:53 PST 2017
+[06/15 11:22:31      0s] Options:	
+[06/15 11:22:31      0s] Date:		Fri Jun 15 11:22:31 2018
+[06/15 11:22:31      0s] Host:		cad1 (x86_64 w/Linux 2.6.32-696.el6.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz 8192KB)
+[06/15 11:22:31      0s] OS:		CentOS release 6.9 (Final)
+[06/15 11:22:31      0s] 
+[06/15 11:22:31      0s] License:
+[06/15 11:22:31      0s] 		invs	Innovus Implementation System	16.2	checkout succeeded
+[06/15 11:22:31      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[06/15 11:22:40      6s] @(#)CDS: Innovus v16.21-s078_1 (64bit) 01/20/2017 14:00 (Linux 2.6.18-194.el5)
+[06/15 11:22:40      6s] @(#)CDS: NanoRoute 16.21-s078_1 NR170119-1828/16_21-UB (database version 2.30, 368.6.1) {superthreading v1.37}
+[06/15 11:22:40      6s] @(#)CDS: AAE 16.21-e024 (64bit) 01/20/2017 (Linux 2.6.18-194.el5)
+[06/15 11:22:40      6s] @(#)CDS: CTE 16.21-s038_1 () Jan 19 2017 09:01:24 ( )
+[06/15 11:22:40      6s] @(#)CDS: SYNTECH 16.21-s013_1 () Jan 14 2017 08:40:50 ( )
+[06/15 11:22:40      6s] @(#)CDS: CPE v16.21-s075
+[06/15 11:22:40      6s] @(#)CDS: IQRC/TQRC 15.2.7-s638 (64bit) Wed Jan  4 19:58:15 PST 2017 (Linux 2.6.18-194.el5)
+[06/15 11:22:40      6s] @(#)CDS: OA 22.50-p051 Thu Aug  4 00:05:16 2016
+[06/15 11:22:40      6s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[06/15 11:22:40      6s] @(#)CDS: RCDB 11.8
+[06/15 11:22:40      6s] --- Running on cad1 (x86_64 w/Linux 2.6.32-696.el6.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz 8192KB) ---
+[06/15 11:22:40      6s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_3788_cad1_j151080D_rOkPJl.
+
+[06/15 11:22:41      6s] 
+[06/15 11:22:41      6s] **INFO:  MMMC transition support version v31-84 
+[06/15 11:22:41      6s] 
+[06/15 11:22:41      6s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[06/15 11:22:41      6s] <CMD> suppressMessage ENCEXT-2799
+[06/15 11:22:41      6s] <CMD> getDrawView
+[06/15 11:22:41      6s] <CMD> loadWorkspace -name Physical
+[06/15 11:22:41      6s] <CMD> win
+[06/15 11:24:40     15s] **ERROR: (IMPSYT-16088):	Specify the name of Library Set.
+[06/15 11:26:59     27s] <CMD> set init_gnd_net VSS
+[06/15 11:26:59     27s] <CMD> set init_lef_file ~matutani/lib/cells.lef
+[06/15 11:26:59     27s] <CMD> set init_verilog mips.v
+[06/15 11:26:59     27s] <CMD> set init_mmmc_file Default.view
+[06/15 11:26:59     27s] <CMD> set init_top_cell mips
+[06/15 11:26:59     27s] <CMD> set init_pwr_net VDD
+[06/15 11:26:59     27s] <CMD> init_design
+[06/15 11:26:59     28s] #- Begin Load MMMC data ... (date=06/15 11:26:59, mem=530.8M)
+[06/15 11:26:59     28s] #- End Load MMMC data ... (date=06/15 11:26:59, total cpu=0:00:00.0, real=0:00:00.0, peak res=91.9M, current mem=530.8M)
+[06/15 11:26:59     28s] 
+[06/15 11:26:59     28s] Loading LEF file /home/staff2/matutani/lib/cells.lef ...
+[06/15 11:26:59     28s] Set DBUPerIGU to M2 pitch 380.
+[06/15 11:26:59     28s] 
+[06/15 11:26:59     28s] viaInitial starts at Fri Jun 15 11:26:59 2018
+viaInitial ends at Fri Jun 15 11:26:59 2018
+Loading view definition file from Default.view
+[06/15 11:26:59     28s] Reading default timing library '/home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib' ...
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[06/15 11:26:59     28s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[06/15 11:27:00     29s] Read 134 cells in library 'NangateOpenCellLibrary' 
+[06/15 11:27:00     29s] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.49min, fe_real=4.48min, fe_mem=548.3M) ***
+[06/15 11:27:00     29s] #- Begin Load netlist data ... (date=06/15 11:27:00, mem=548.3M)
+[06/15 11:27:00     29s] *** Begin netlist parsing (mem=548.3M) ***
+[06/15 11:27:00     29s] Created 134 new cells from 1 timing libraries.
+[06/15 11:27:00     29s] Reading netlist ...
+[06/15 11:27:00     29s] Backslashed names will retain backslash and a trailing blank character.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 8 near the text # for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 8 near the text parameter for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 8 near the text WIDTH for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 8 near the text = for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 8 near the text 8 for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 8 near the text , for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 8 near the text REGBITS for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 8 near the text = for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 8 near the text 3 for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 8 near the text ) for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 9 near the text input for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 9 near the text clk for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 9 near the text , for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 9 near the text reset for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 9 near the text , for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 10 near the text input for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 10 near the text [ for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 10 near the text WIDTH for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 10 near the text -1 for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **ERROR: (IMPVL-209):	In Verilog file 'mips.v', check line 10 near the text : for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:27:00     29s] Type 'man IMPVL-209' for more detail.
+[06/15 11:27:00     29s] **WARN: (EMS-27):	Message (IMPVL-209) has exceeded the current message display limit of 20.
+[06/15 11:27:00     29s] To increase the message display limit, refer to the product command reference manual.
+[06/15 11:27:00     29s] Verilog file 'mips.v' has errors!  See above.
+[06/15 11:27:00     29s] 
+[06/15 11:27:00     29s] *** Memory Usage v#1 (Current mem = 548.312M, initial mem = 182.438M) ***
+[06/15 11:27:00     29s] #- End Load netlist data ... (date=06/15 11:27:00, total cpu=0:00:00.0, real=0:00:00.0, peak res=105.5M, current mem=548.3M)
+[06/15 11:27:11     32s] **ERROR: **ERROR: (IMPVL-902):	Failed to read netlist mips.v. See previous error messages for details.  Resolve the issues and reload the design.
+[06/15 11:27:11     32s] 
+[06/15 11:29:06     39s] <CMD> set init_gnd_net VSS
+[06/15 11:29:06     39s] <CMD> set init_lef_file ~matutani/lib/cells.lef
+[06/15 11:29:06     39s] <CMD> set init_verilog mips.vnet
+[06/15 11:29:06     39s] <CMD> set init_mmmc_file Default.view
+[06/15 11:29:06     39s] <CMD> set init_top_cell mips
+[06/15 11:29:06     39s] <CMD> set init_pwr_net VDD
+[06/15 11:29:06     39s] <CMD> init_design
+[06/15 11:29:06     39s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[06/15 11:29:06     39s] #- Begin Load MMMC data ... (date=06/15 11:29:06, mem=549.3M)
+[06/15 11:29:06     39s] The existing analysis_view 'default' has been replaced with new attributes.
+[06/15 11:29:06     39s] INFO: New setup and hold views overwrite old settings during design initialization
+[06/15 11:29:06     39s] #- End Load MMMC data ... (date=06/15 11:29:06, total cpu=0:00:00.0, real=0:00:00.0, peak res=107.0M, current mem=550.8M)
+[06/15 11:29:06     39s] 
+[06/15 11:29:06     39s] Loading LEF file /home/staff2/matutani/lib/cells.lef ...
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'poly' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'active' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'via1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'via2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'via3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'via4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'via5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'via6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'metal7' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'via7' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'metal8' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'via8' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'metal9' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-119):	LAYER 'via9' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-119' for more detail.
+[06/15 11:29:06     39s] **WARN: (EMS-27):	Message (IMPLF-119) has exceeded the current message display limit of 20.
+[06/15 11:29:06     39s] To increase the message display limit, refer to the product command reference manual.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via1_4' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via1_0' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via1_1' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via1_2' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via1_3' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via1_5' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via1_6' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via1_7' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via1_8' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via2_8' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via2_4' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via2_5' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via2_7' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via2_6' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via2_0' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via2_1' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via2_2' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via2_3' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via3_2' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPLF-223):	The LEF via 'via3_0' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-223' for more detail.
+[06/15 11:29:06     39s] **WARN: (EMS-27):	Message (IMPLF-223) has exceeded the current message display limit of 20.
+[06/15 11:29:06     39s] To increase the message display limit, refer to the product command reference manual.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via1Array-0' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via1Array-1' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via1Array-2' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via1Array-3' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via1Array-4' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via2Array-0' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via2Array-1' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via2Array-2' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via2Array-3' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via2Array-4' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via3Array-0' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via3Array-1' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via3Array-2' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via4Array-0' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via5Array-0' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via6Array-0' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via7Array-0' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via8Array-0' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-151):	The viaRule 'Via9Array-0' has been defined, the content will be skipped.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AND2_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AND2_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AND2_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AND3_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AND3_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AND3_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AND4_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AND4_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AND4_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'ANTENNA_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AOI211_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AOI211_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AOI211_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AOI21_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AOI21_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AOI21_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AOI221_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AOI221_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AOI221_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (IMPLF-58):	MACRO 'AOI222_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-58' for more detail.
+[06/15 11:29:06     39s] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[06/15 11:29:06     39s] To increase the message display limit, refer to the product command reference manual.
+[06/15 11:29:06     39s] **WARN: (IMPLF-61):	134 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+[06/15 11:29:06     39s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/15 11:29:06     39s] Type 'man IMPLF-61' for more detail.
+[06/15 11:29:06     39s] Loading view definition file from Default.view
+[06/15 11:29:06     39s] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.66min, fe_real=6.58min, fe_mem=548.3M) ***
+[06/15 11:29:06     39s] #- Begin Load netlist data ... (date=06/15 11:29:06, mem=548.3M)
+[06/15 11:29:06     39s] *** Begin netlist parsing (mem=548.3M) ***
+[06/15 11:29:06     39s] Created 0 new cells from 1 timing libraries.
+[06/15 11:29:06     39s] Reading netlist ...
+[06/15 11:29:06     39s] Backslashed names will retain backslash and a trailing blank character.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text # for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text REGBITS for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text ) for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text regmux for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text instr for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text [ for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text REGBITS for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text + for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text 15 for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text : for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text 16 for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text ] for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text , for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text instr for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text [ for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text REGBITS for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text + for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text 10 for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text : for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **ERROR: (IMPVL-209):	In Verilog file 'mips.vnet', check line 1 near the text 11 for the issue: 'syntax error'.  Update the text accordingly.
+[06/15 11:29:06     39s] Type 'man IMPVL-209' for more detail.
+[06/15 11:29:06     39s] **WARN: (EMS-27):	Message (IMPVL-209) has exceeded the current message display limit of 20.
+[06/15 11:29:06     39s] To increase the message display limit, refer to the product command reference manual.
+[06/15 11:29:06     39s] **FATAL ERROR: [/vols/cm_t1nb_006/INNOVUS162/Rel/16.21/main/lnx86_64_opt/16.21-s078_1/fe/src/vl/vlVerilogLex.l:1006:vlVerilog_yyerror]: Too many errors in verilog file mips.vnet ... aborting
+[06/15 11:29:06     39s] Exiting due to previous fatal error.

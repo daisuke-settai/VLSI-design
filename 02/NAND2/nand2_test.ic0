@@ -1,0 +1,55 @@
+* "simulator" "HSPICE" 
+* "version" "C-2009.03 64-BIT"
+* "format" "HSP"
+* "rundate" "23:03:29 04/20/2018 "
+* "netlist" "nand2_test.sp "
+* "runtitle" " *nand2 test"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a1 =   0.            
++ a2 =   0.            
++ vdd =   1.1000        
++ vss =   0.            
++ zn =   1.1000        
++ x0.n_a1_m1_g = 779.6520n       
++ x0.n_a1_m3_g = 282.9553n       
++ x0.n_a2_m0_g = 759.8669n       
++ x0.n_a2_m2_g = 247.8555n       
++ x0.n_vdd_m0_s =   1.1000        
++ x0.n_vdd_m1_d =   1.1000        
++ x0.n_vss_m2_s =   8.0325n       
++ x0.n_zn_m0_d =   1.1000        
++ x0.n_zn_m3_d =   1.1000        
++ x0.net_0 =  66.0952m       
++ x0.x_pm_nand2_x1%a2_18 = 247.8493n       
++ x0.x_pm_nand2_x1%vdd_19 =   1.1000        
++ x0.x_pm_nand2_x1%a2_12 =   1.0856n       
++ x0.x_pm_nand2_x1%a2_14 = 218.4615n       
++ x0.x_pm_nand2_x1%a2_5 = 264.8036n       
++ x0.x_pm_nand2_x1%a2_1 = 247.8496n       
++ x0.x_pm_nand2_x1%zn_10 =   1.1000        
++ x0.x_pm_nand2_x1%zn_9 =   1.1000        
++ x0.x_pm_nand2_x1%vdd_18 =   1.1000        
++ x0.x_pm_nand2_x1%zn_3 =   1.1000        
++ x0.x_pm_nand2_x1%a1_11 = 227.5972n       
++ x0.x_pm_nand2_x1%a1_16 = 267.6345n       
++ x0.x_pm_nand2_x1%a1_9 =   1.1310n       
++ x0.x_pm_nand2_x1%a1_5 = 284.5887n       
++ x0.x_pm_nand2_x1%a1_1 = 268.3438n       
++ x0.x_pm_nand2_x1%vdd_13 =   1.1000        
++ x0.x_pm_nand2_x1%vdd_12 =   1.1000        
++ x0.x_pm_nand2_x1%vdd_9 =   1.1000        
++ x0.x_pm_nand2_x1%vdd_34 =   1.1000        
++ x0.x_pm_nand2_x1%vdd_33 =   1.1000        
++ x0.x_pm_nand2_x1%vdd_24 =   1.1000        
++ x0.x_pm_nand2_x1%vss_18 = 840.0621p       
++ x0.x_pm_nand2_x1%vss_17 =   0.            
++ x0.x_pm_nand2_x1%vss_10 =   0.            
++ x0.x_pm_nand2_x1%vss_9 =   0.            
++ x0.x_pm_nand2_x1%vss_8 =   0.            
++ x0.x_pm_nand2_x1%vss_29 =   1.0171n       
+***   END: Saved Operating Point ***                     

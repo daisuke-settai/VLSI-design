@@ -1,0 +1,43 @@
+ncverilog: 06.20-s004: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+TOOL:	ncverilog	06.20-s004: Started on May 18, 2018 at 11:30:36 JST
+ncverilog
+	+access+r
+	mux4test.v
+	mux4.vnet
+	-v
+	/home/staff2/matutani/lib/cells.v
+file: mux4test.v
+file: mux4.vnet
+file: /home/staff2/matutani/lib/cells.v
+	module NangateOpenCellLibrary.MUX2_X1:v
+		errors: 0, warnings: 0
+		Caching library 'NangateOpenCellLibrary' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		NangateOpenCellLibrary.MUX2_X1:v <0x57a69a5b>
+			streams:   6, words:   636
+		worklib.test:v <0x413a40c3>
+			streams:   6, words:  2121
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  5       3
+		Primitives:              12       3
+		Timing outputs:           3       1
+		Registers:                5       5
+		Scalar wires:             9       -
+		Expanded wires:           2       1
+		Initial blocks:           1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+ncsim> source /usr/local/vdec/cadence/IUS06.20.004/tools/inca/files/ncsimrc
+ncsim> run
+d1=0
+d2=1
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	ncverilog	06.20-s004: Exiting on May 18, 2018 at 11:30:38 JST  (total: 00:00:02)
